@@ -1,0 +1,35 @@
+from tkinter import *
+
+root = Tk()
+root.geometry('644x900')
+root.title('Simple Calculator ')
+root.wm_iconbitmap('1.ico')
+
+scvalue = StringVar()
+scvalue.set("")
+screen=Entry(root, textvariable=scvalue, font="chango 40 bold").pack()
+
+f1= Frame(root, bg="silver")
+b1=Button(f1, text="1",font="Arial 40 bold", padx="4",).pack(side=LEFT)
+b2=Button(f1, text="2",font="Arial 40 bold", padx="4",).pack(side=LEFT)
+b3=Button(f1, text="3",font="Arial 40 bold", padx="4",).pack(side=LEFT)
+b4=Button(f1, text="+",font="Arial 40 bold", padx="4",).pack(side=LEFT)
+f1.pack()
+
+f2= Frame(root, bg="silver")
+b1=Button(f2, text="4",font="Arial 40 bold", padx="4",).pack(side=LEFT)
+b2=Button(f2, text="5",font="Arial 40 bold", padx="4",).pack(side=LEFT)
+b3=Button(f2, text="6",font="Arial 40 bold", padx="4",).pack(side=LEFT)
+b4=Button(f2, text="-",font="Arial 40 bold", padx="4",).pack(side=LEFT)
+f2.pack()
+
+f3= Frame(root, bg="silver")
+b1=Button(f3, text="7",font="Arial 40 bold", padx="4",).pack(side=LEFT)
+b2=Button(f3, text="8",font="Arial 40 bold", padx="4",).pack(side=LEFT)
+b3=Button(f3, text="9",font="Arial 40 bold", padx="4",).pack(side=LEFT)
+b4=Button(f3, text="*",font="Arial 40 bold", padx="4",).pack(side=LEFT)
+f3.pack()
+
+
+
+root.mainloop()
