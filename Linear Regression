@@ -1,0 +1,16 @@
+import pandas as pd
+
+data = {'Size': [1200, 1500, 1800, 2000],
+'Bedrooms': [3, 4, 4, 5],
+'Price': [300000, 350000, 400000, 450000]}
+df = pd.DataFrame(data)
+
+print(df)
+
+filtered_df = df[df['Bedrooms'] > 4]
+print("\nHouses with more than 3 bedrooms:")
+print(filtered_df)
+
+average_price = df['Price'].mean()
+price = df['Price'].mean()
+print("\nAverage House Price:", average_price)
